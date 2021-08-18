@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+  Name: Rita Kuo
+  Date: November 18, 2020
+  Section: CSE154 AJ
+  This is the index.html page for my CP4 of web development work. It is linked to the
+  styles.css file and index.js file. This page has a button for users remove the middle
+  image and a button for users to get movie names and summaries.
+  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>CP4</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <h1>Movies that I watched recently:</h1>
+      <button id="remove-btn">Click me to remove popcorn image</button>
+      <div>
+        <button id="summary-btn1">Click me to get summary for Interstellar</button>
+        <button id="summary-btn2">Click me to get summary for Peninsula </button>
+        <button id="summary-btn3">Click me to get summary for Tenet</button>
+      </div>
+      <section id="parent">
+        <img src="img/interstellar-film-poster.jpg" alt="interstellar-film-poster">
+        <img src="img/peninsula-poster.jpg" alt="peninsula-poster">
+        <img src="img/popcorn.jpg" alt="popcorn" id="remove">
+        <img src="img/tenet_poster.jpg" alt="tenet_poster">
+      </section>
+
+      <section>
+        <div>
+          <button id="name-btn">Click me to get movie name</button>
+        </div>
+        <h2 id="response-message">Here is the info:</h2>
+        <div id="name-response"></div>
+        <div id="summary-response"></div>
+        <div id="error-response"></div>
+      </section>
+    </body>
+  </html>
